@@ -1,46 +1,60 @@
 <h1 align="center">Urlcutjs</h1>
 <h3 align="center">This is the official Urlcut NPM package.</h3>
-<h2>How to use -</h2>
-<pre>
-const UrlcutClient = require('urlcutjs');
+
+### Install
+
+```sh
+npm install urlcutjs
+```
+
+### Usage
+
+```js
+const UrlcutClient = require("urlcutjs");
 const Client = new UrlcutClient("API-Key");
-</pre>
-<br>
-<h2>How to create a new short link -</h2>
-<pre>
-const UrlcutClient = require('urlcutjs');
+```
+
+```ts
+// TypeScript/ES Module support
+import UrlcutClient from "discord-api-types/v10";
 const Client = new UrlcutClient("API-Key");
-<br>Client.Create('https://www.example.com')
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
-</pre>
-<br>
-Output:
-<pre>
+```
+
+### How to shortend a link
+
+```js
+Client.Create("https://www.example.com")
+  .then((data) => console.log(data))
+  .catch((err) => console.error(err));
+```
+
+> Output
+
+```json
 {
-  success: true,
-  shortened: 'CxTYCb',
-  domain: 'urlcut.app',
-  credits: 0.4
+  "success": true,
+  "shortened": "CxTYCb",
+  "domain": "example.com",
+  "credits": 0.4
 }
-</pre>
-<br>
-<h2>How to delete an existing short link -</h2>
-<pre>
-const UrlcutClient = require('urlcutjs');
-const Client = new UrlcutClient("API-Key");
-<br>Client.Delete('Example-Short')
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
-</pre>
-<br>
-Output:
-<pre>
+```
+
+### How to delete an existing short link
+
+```js
+Client.Delete("Example-Short")
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error));
+```
+
+> Output
+
+```json
 {
-  success: true,
+  "success": true
 }
-</pre>
-<br>
-<hr>
-<p align="center">Made by <a href="https://urlcut.app">Urlcut</a></p>
-<hr>
+```
+
+## **Contributors**
+
+[![Contributors](https://stg.contrib.rocks/image?repo=UrlcutAccount/Urlcutjs)](https://github.com/UrlcutAccount/Urlcutjs/graphs/contributors)
