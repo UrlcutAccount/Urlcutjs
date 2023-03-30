@@ -16,7 +16,7 @@ const Client = new UrlcutClient("API-Key");
 
 ```ts
 // TypeScript/ES Module support
-import UrlcutClient from "discord-api-types/v10";
+import UrlcutClient from "urlcutjs";
 const Client = new UrlcutClient("API-Key");
 ```
 
