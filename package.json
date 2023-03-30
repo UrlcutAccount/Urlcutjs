@@ -1,6 +1,6 @@
 {
   "name": "urlcutjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Urlcut Public API package.",
   "main": "index.js",
   "keywords": [
@@ -8,6 +8,10 @@
     "API"
   ],
   "author": "Urlcut",
+  "homepage": "https://github.com/UrlcutAccount/Urlcutjs",
+  "repository": {
+    "url": "https://github.com/UrlcutAccount/Urlcutjs"
+  },
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.3"
