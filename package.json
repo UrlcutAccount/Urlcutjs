@@ -1,0 +1,15 @@
+{
+  "name": "urlcutjs",
+  "version": "1.0.0",
+  "description": "Official Urlcut Public API package.",
+  "main": "index.js",
+  "keywords": [
+    "Urlcut",
+    "API"
+  ],
+  "author": "Urlcut",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.3"
+  }
+}
