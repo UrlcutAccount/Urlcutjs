@@ -55,6 +55,24 @@ Client.Delete("Example-Short")
 }
 ```
 
+### How to get the analytics of a short link
+
+```js
+Client.Analytics("Example-Short")
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error));
+```
+
+> Output
+
+```json
+{
+  "success": true,
+  "countriesOfTheUsers": [ { "DE": 1 } ],
+  "usersDeviceType": { "PC": 1, "PHONE": 0 }
+}
+```
+
 ## **Contributors**
 
 [![Contributors](https://stg.contrib.rocks/image?repo=UrlcutAccount/Urlcutjs)](https://github.com/UrlcutAccount/Urlcutjs/graphs/contributors)
