@@ -7,6 +7,7 @@ class _UrlcutError extends Error {
 const API = new String("https://v3.urlcut.app/developer/api");
 API.Create = "https://v3.urlcut.app/developer/api/create";
 API.Delete = "https://v3.urlcut.app/developer/api/delete";
+API.Analytics = "https://v3.urlcut.app/developer/api/analytics";
 
 global._UrlcutError = _UrlcutError;
 global.API = API;
