@@ -1,6 +1,6 @@
 {
   "name": "urlcutjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Official Urlcut Public API package.",
   "main": "index.js",
   "keywords": [
