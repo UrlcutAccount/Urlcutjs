@@ -55,15 +55,12 @@ class Client {
 
     Analytics(Identifier) {
         return new Promise((resolve, reject) => {
-            fetch(API.Analytics, {
-                method: "POST",
+            fetch(API.AnalyticsLink(Identifier), {
+                method: "GET",
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${this._T}`
-                },
-                body: JSON.stringify({
-                    shortenedUrlId: Identifier
-                })
+                }
             })
                 .then(response => response.json())
                 .then(data => {
