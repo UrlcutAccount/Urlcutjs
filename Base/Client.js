@@ -52,6 +52,29 @@ class Client {
                 .catch(error => reject(new _UrlcutError(error.message)));
         });
     }
+
+    Analytics(Identifier) {
+        return new Promise((resolve, reject) => {
+            fetch(API.Analytics, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${this._T}`
+                },
+                body: JSON.stringify({
+                    shortenedUrlId: Identifier
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success == false) {
+                        throw new _UrlcutError(data.error);
+                    }
+                    resolve(data);
+                })
+                .catch(error => reject(new _UrlcutError(error.message)));
+        });
+    }
 };
 
 module.exports = Client;
